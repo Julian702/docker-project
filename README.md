@@ -30,3 +30,23 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Build with Docker 
+
+Build the Docker image from Dockerfile  
+ ```docker build -t <dockerhubid>/docker-project:v0.0.1 .```
+
+List your docker images  
+```docker image ls```
+
+Run the image as a container  
+```docker run -d --name web -p 3000:3000 <dockerhubid>/docker-project:v0.0.1```
+
+List the existing containers  
+```docker container ls```
+
+Stop the container  
+```docker stop web```
+
+Start the container again  
+```docker start web```
